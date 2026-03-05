@@ -2,7 +2,7 @@
 
 A digital hourglass clock built on an ESP32, featuring two circular TFT screens that display a sand animation synchronized to the current time. The project includes a full web configuration interface for setting the timer mode, NTP server, timezone, and a full suite of color options, with all settings stored persistently in EEPROM.
 
-![Image of the final project](https://via.placeholder.com/600x400.png?text=ESP32+Dual+TFT+Hourglass+Project)
+![Image of the final project](/images/Hourglass.png)
 
 ---
 
