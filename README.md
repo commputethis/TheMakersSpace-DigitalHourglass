@@ -56,13 +56,13 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 
 ## Wiring Diagram
 
-The following table shows the correct pin assignments for the ESP32 DevKit V1. **Double-check your specific board's pinout diagram**, as "D" numbers can vary. The GPIO number is the most reliable reference. Note: pins below are for board used in this project' ESP32 DevKit V1.
+The following table shows the correct pin assignments for the ESP32 DevKit V1. **Double-check your specific board's pinout diagram**, as "D" numbers can vary. The GPIO number is the most reliable reference. Note: pins below are for board used in this project's ESP32 DevKit V1.
 
 | Device Pin | Connect to ESP32 Pin | Typical "D" Number | Notes |
 |---|---|---|---|
 | **SPI Bus (Shared)** | | | |
-| TFT MOSI/SDA | `GPIO 23` | `D23` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
-| TFT SCK/SCL | `GPIO 18` | `D18` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
+| TFT SDA (SPI MOSI) | `GPIO 23` | `D23` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
+| TFT SCL (SPI SCK) | `GPIO 18` | `D18` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
 | **TFT 1 (Upper Glass)** | | | |
 | CS (Chip Select) | `GPIO 2` | `D2` | Using Female to Female Jumper Wire. |
 | DC (Data/Command) | `GPIO 5` | `D5` | Using Female to Female Jumper Wire. |
@@ -170,7 +170,7 @@ Once the ESP32 is connected to your network, you can access the configuration pa
 
 -   **Displays are blank or white:**
     -   Check all wiring, especially `3.3V`, `GND`, `CS`, and `DC`.
-    -   Ensure your 3.3V power supply can provide enough current (at least 500mA is recommended).
+    -   Ensure your 5V power supply can provide enough current (at least 500mA is recommended).
     -   Make sure you have installed the `Adafruit_GC9A01A` library.
 -   **WiFi doesn't connect:**
     -   On first boot, it will create a unique access point (e.g., `Hourglass-A4CF12...`). **Look at the upper TFT screen to see the exact SSID.** Connect to that to configure WiFi.
