@@ -50,7 +50,7 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 | [221-413 Wago Lever Nuts](https://www.amazon.com/dp/B0957T1S9C) | 2 | For MOSI/SDA and SCK/SCL connections. |
 | [221-415 Wago Lever Nuts](https://www.amazon.com/dp/B0957T1S9C) | 2 | For Power and Ground connections. |
 | 5V Power Supply | 1 | Ensure it can provide enough current for both displays (at least 500mA is recommended). |
-| [3D Printed Case](files/Digital_Hourglass_Remix.3mf) | 1 | Hourglass looking enclosure to house the components. |
+| [3D Printed Case](files/3D_Models) | 1 | Hourglass looking enclosure to house the components. |
 
 ---
 
