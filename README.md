@@ -30,6 +30,7 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
     -   Toggle between Minute and Hour mode.
     -   Set the NTP server.
     -   Select your timezone from a dropdown list.
+    -   Toggle between 12-hour and 24-hour time format.
     -   Customize the colors of the clock text, background, and sand.
 -   **Persistent Settings:** All configuration is saved to the ESP32's EEPROM, so your settings are preserved after a power cycle.
 -   **WiFiManager with Unique SSID:** For easy initial WiFi setup. The ESP32 creates a unique access point for each board (e.g., `Hourglass-A4CF12...`) to prevent confusion in multi-device environments like classrooms.
@@ -142,6 +143,7 @@ Once the ESP32 is connected to your network, you can access the configuration pa
 3.  You will see the status page. Click the **Configure** button.
 4.  On the configuration page, you can:
     -   **Timer Mode:** Switch between `Minute Mode` and `Hour Mode`.
+    -   **Time Format:** Switch between 12-Hour Format and 24-Hour Format.
     -   **NTP Server:** Change the server used for time synchronization (e.g., `pool.ntp.org`).
     -   **Timezone:** Select your local timezone from the dropdown list.
     -   **Clock Color:** Choose the color for the time display on the upper screen.
@@ -155,6 +157,7 @@ Once the ESP32 is connected to your network, you can access the configuration pa
 
 -   **Time Source:** The ESP32 first tries to get the time from an NTP server. If successful, it sets the DS3231 RTC. If NTP fails, it falls back to the time compiled into the sketch. The RTC ensures the device keeps accurate time even if WiFi is lost.
 -   **Time Calculation:** The UTC time from the RTC is adjusted by the timezone offset (in minutes) that you set in the web interface to get the correct local time.
+-   **Time Format:** The `drawTimeDisplay()` function checks the `configIs24Hour` setting. If true, it displays the hour in 24-hour format (e.g., 14:00). If false, it displays the hour in 12-hour format (e.g., 2:00).
 -   **Unique ID:** The device generates a unique ID from its MAC address. This ID is used to create a unique WiFi SSID (`Hourglass-` + ID) for the initial setup portal, making it easy to identify individual devices in a classroom.
 -   **Color Customization:** The `colors.h` file defines a palette of colors. The web interface lets you select an index from this palette for the clock, background, and sand. These choices are saved to EEPROM and applied at startup.
 -   **Animation:** The `drawFrame()` function calculates how far through the current minute or hour the device is. It then draws the corresponding amount of sand in the upper and lower bulbs.
