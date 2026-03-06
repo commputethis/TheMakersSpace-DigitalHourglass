@@ -111,11 +111,11 @@ The project is split into two files.
 
 1.  **Create the Main Sketch (`.ino`):**
     -   Create a new sketch in the Arduino IDE.
-    -   Copy the entire `HourGlass.ino` code and paste it into this sketch.
+    -   Copy the entire [HourGlass.ino](/files/HourGlass/HourGlass.ino) code and paste it into this sketch.
 2.  **Create the Color Header File (`colors.h`):**
     -   In the Arduino IDE, click the down-arrow button on the far right of the tabs and select "New Tab".
     -   Name the new tab `colors.h`.
-    -   Copy the entire content of your `colors.h` file and paste it into this new tab.
+    -   Copy the entire content of your [colors.h](/files/HourGlass/colors.h) file and paste it into this new tab.
 3.  **Upload:**
     -   Select your ESP32 board from `Tools > Board > ESP32 Arduino > ESP32 Dev Module`.
     -   Connect your ESP32 to your computer and select the correct COM port.
