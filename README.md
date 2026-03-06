@@ -15,6 +15,7 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 5.  [Configuration](#configuration)
 6.  [How It Works](#how-it-works)
 7.  [Troubleshooting](#troubleshooting)
+8.  [Attributions](#Attributions)
 
 ---
 
@@ -44,6 +45,7 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 | DS3231 Real-Time Clock (RTC) Module | 1 | For accurate timekeeping. |
 | Breadboard and Jumper Wires | - | For prototyping the connections. |
 | 3.3V Power Supply | 1 | Ensure it can provide enough current for both displays. |
+| 3D Printed Case | 1 | Hourglass looking enclosure to house the components. |
 
 ---
 
@@ -172,3 +174,10 @@ Once the ESP32 is connected to your network, you can access the configuration pa
 -   **Code won't compile:**
     -   Make sure you have installed all the required libraries listed in the Software Setup section.
     -   Ensure you have created the `colors.h` tab and pasted the color definitions into it. The name must match exactly.
+
+---
+
+## Attributions
+
+- This was originally created by Markus Opitz and published on [Instructables](https://www.instructables.com/Digital-Hourglass/).
+- The 3D case was redesigned by Don Potbury.
