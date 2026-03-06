@@ -40,15 +40,15 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 
 | Component | Quantity | Notes |
 |---|---|---|
-| ESP32 DevKit V1 | 1 | The "brains" of the project. |
-| 1.28" GC9A01A Circular TFT (240x240) | 2 | For the upper and lower glass displays. |
-| DS3231 Real-Time Clock (RTC) Module | 1 | For accurate timekeeping. |
-| Female to Male Jumper Wires | 14 | For power, ground, SDA, and SCL connections. |
-| Female to Female Jumper Wires | 6 | For DC, CS, and RST connections. |
-| Male to Male Jumper Wires | 2 | For power and ground connection on RTC. |
-| 221-413 Wago Lever Nuts | 2 | For MOSI/SDA and SCK/SCL connections. |
-| 221-415 Wago Lever Nuts | 2 | For Power and Ground connections. |
-| 5V Power Supply | 1 | Ensure it can provide enough current for both displays. |
+| [ESP32 DevKit V1](https://www.amazon.com/dp/B0C7C2HQ7P) | 1 | The "brains" of the project. |
+| [1.28" GC9A01A Circular TFT (240x240)](https://www.amazon.com/Teyleten-Robot-Display-Interface-240x240/dp/B0B7TFRNN1) | 2 | For the upper and lower glass displays. |
+| [DS3231 Real-Time Clock (RTC) Module](https://www.amazon.com/dp/B08X4H3NBR) | 1 | For accurate timekeeping. |
+| [Female to Male Jumper Wires](https://www.amazon.com/dp/B07GD1R5MS) | 14 | For power, ground, SDA, and SCL connections. |
+| [Female to Female Jumper Wires](https://www.amazon.com/dp/B07GD312VG) | 6 | For DC, CS, and RST connections. |
+| [Male to Male Jumper Wires](https://www.amazon.com/dp/B07GD1ZCHQ) | 2 | For power and ground connection on RTC. |
+| [221-413 Wago Lever Nuts](https://www.amazon.com/dp/B0957T1S9C) | 2 | For MOSI/SDA and SCK/SCL connections. |
+| [221-415 Wago Lever Nuts](https://www.amazon.com/dp/B0957T1S9C) | 2 | For Power and Ground connections. |
+| 5V Power Supply | 1 | Ensure it can provide enough current for both displays (at least 500mA is recommended). |
 | [3D Printed Case](files/Digital_Hourglass_Remix.3mf) | 1 | Hourglass looking enclosure to house the components. |
 
 ---
