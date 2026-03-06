@@ -43,9 +43,13 @@ A digital hourglass clock built on an ESP32, featuring two circular TFT screens 
 | ESP32 DevKit V1 | 1 | The "brains" of the project. |
 | 1.28" GC9A01A Circular TFT (240x240) | 2 | For the upper and lower glass displays. |
 | DS3231 Real-Time Clock (RTC) Module | 1 | For accurate timekeeping. |
-| Breadboard and Jumper Wires | - | For prototyping the connections. |
-| 3.3V Power Supply | 1 | Ensure it can provide enough current for both displays. |
-| 3D Printed Case | 1 | Hourglass looking enclosure to house the components. |
+| Female to Male Jumper Wires | 14 | For power, ground, SDA, and SCL connections. |
+| Female to Female Jumper Wires | 6 | For DC, CS, and RST connections. |
+| Male to Male Jumper Wires | 2 | For power and ground connection on RTC. |
+| 221-413 Wago Lever Nuts | 2 | For MOSI/SDA and SCK/SCL connections. |
+| 221-415 Wago Lever Nuts | 2 | For Power and Ground connections. |
+| 5V Power Supply | 1 | Ensure it can provide enough current for both displays. |
+| [3D Printed Case](files/Digital_Hourglass_Remix.3mf) | 1 | Hourglass looking enclosure to house the components. |
 
 ---
 
@@ -56,25 +60,25 @@ The following table shows the correct pin assignments for the ESP32 DevKit V1. *
 | Device Pin | Connect to ESP32 Pin | Typical "D" Number | Notes |
 |---|---|---|---|
 | **SPI Bus (Shared)** | | | |
-| TFT MOSI | `GPIO 23` | `D23` | Connects to both TFTs. |
-| TFT SCK | `GPIO 18` | `D18` | Connects to both TFTs. |
+| TFT MOSI/SDA | `GPIO 23` | `D23` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
+| TFT SCK/SCL | `GPIO 18` | `D18` | Connect to 221-413 Wago Lever Nut using Female to Male Jumper Wire. |
 | **TFT 1 (Upper Glass)** | | | |
-| CS (Chip Select) | `GPIO 2` | `D2` | |
-| DC (Data/Command) | `GPIO 5` | `D5` | |
-| RST (Reset) | `GPIO 4` | `D4` | |
-| VCC | `3.3V` | `3V3` | |
-| GND | `GND` | `GND` | |
+| CS (Chip Select) | `GPIO 2` | `D2` | Using Female to Female Jumper Wire. |
+| DC (Data/Command) | `GPIO 5` | `D5` | Using Female to Female Jumper Wire. |
+| RST (Reset) | `GPIO 4` | `D4` | Using Female to Female Jumper Wire. |
+| VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
+| GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
 | **TFT 2 (Lower Glass)** | | | |
-| CS (Chip Select) | `GPIO 17` | `TX2` | |
-| DC (Data/Command) | `GPIO 19` | `D19` | |
-| RST (Reset) | `GPIO 15` | `D15` | |
-| VCC | `3.3V` | `3V3` | |
-| GND | `GND` | `GND` | |
+| CS (Chip Select) | `GPIO 17` | `TX2` | Using Female to Female Jumper Wire. |
+| DC (Data/Command) | `GPIO 19` | `D19` | Using Female to Female Jumper Wire. |
+| RST (Reset) | `GPIO 15` | `D15` | Using Female to Female Jumper Wire. |
+| VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
+| GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
 | **RTC Module (DS3231)** | | | |
-| SDA (I2C Data) | `GPIO 21` | `D21` | |
-| SCL (I2C Clock) | `GPIO 22` | `D22` | |
-| VCC | `3.3V` | `3V3` | |
-| GND | `GND` | `GND` | |
+| SDA (I2C Data) | `GPIO 21` | `D21` | Using Female to Male Jumper Wire. |
+| SCL (I2C Clock) | `GPIO 22` | `D22` | Using Female to Male Jumper Wire. |
+| VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Male to Male Jumper Wire. |
+| GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Male to Male Jumper Wire. |
 
 ---
 
