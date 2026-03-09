@@ -207,4 +207,4 @@ The bottom of the configuration page contains two reset options, each with a con
 ## Attributions
 
 - This was originally created by Markus Opitz and published on [Instructables](https://www.instructables.com/Digital-Hourglass/).
-- The [3D case](/images/HourGlass.png) was redesigned by Don Potbury.
+- The [3D case](/files/3D_Models/) was redesigned by Don Potbury.
