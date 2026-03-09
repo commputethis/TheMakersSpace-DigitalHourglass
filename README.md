@@ -86,7 +86,7 @@ The following table shows the correct pin assignments for the ESP32 DevKit V1. *
 | VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Male to Male Jumper Wire. |
 | GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Male to Male Jumper Wire. |
 
-![Wiring Diagram](images/Digital Hourglass Wiring Diagram v2.png)
+![Wiring Diagram](images/Digital_Hourglass_Wiring_Diagram_v2.png)
 
 ---
 
