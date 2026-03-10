@@ -75,8 +75,8 @@ The following table shows the correct pin assignments for the ESP32 DevKit V1. *
 | VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
 | GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
 | **TFT 2 (Lower Glass)** | | | |
-| CS (Chip Select) | `GPIO 17` | `TX2` | Using Female to Female Jumper Wire. |
-| DC (Data/Command) | `GPIO 19` | `D19` | Using Female to Female Jumper Wire. |
+| CS (Chip Select) | `GPIO 19` | `D19` | Using Female to Female Jumper Wire. |
+| DC (Data/Command) | `GPIO 17` | `TX2` | Using Female to Female Jumper Wire. |
 | RST (Reset) | `GPIO 15` | `D15` | Using Female to Female Jumper Wire. |
 | VCC | `3.3V` | `3V3` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
 | GND | `GND` | `GND` | Connect to 221-415 Wago Lever Nut using Female to Male Jumper Wire. |
